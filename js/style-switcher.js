@@ -53,6 +53,7 @@ const alternateStyles = document.querySelectorAll(".alternate-style");
 
 function setActiveStyle(color)
 { 
+    console.log(alternateStyles);
     alternateStyles.forEach((style) => {
         if(color === style.getAttribute("title"))
         {
@@ -64,6 +65,7 @@ function setActiveStyle(color)
         }
     })
 }
+
 /* ===================== theme light and dark mode ====================== */
 const dayNight = document.querySelector(".day-night");
 dayNight.addEventListener("click", () => {

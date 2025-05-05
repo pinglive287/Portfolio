@@ -540,11 +540,18 @@ h3.my-profession
     text-transform: capitalize;
     color: var(--text-black-900);
 }
+
+.timeline-list .timeline-text::before {
+    content: "• ";
+    color: #555; 
+    margin-right: 5px;
+  }
+
+  
 .about .about-content .timeline .timeline-text
 {
     line-height: 25px;
     font-size: 16px;
-    text-align: justify;
     color: var(--text-black-700);
 }
 
